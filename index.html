@@ -18,143 +18,164 @@
 <body>
   <header>
     <nav id="header-nav">
-      <ul class="header-nav-item-list">
-        <li class="header-nav-item">
-          <a href="./players"><span>Players</span></a>
+      <ul id="header-nav-item-list">
+        <li id="header-nav-item">
+          <a href="./players">
+            <span>Players</span>
+          </a>
         </li>
         <li class="header-nav-item">
-          <a href="./teams"><span>Teams</span></a>
+          <a href="./teams">
+            <span>Teams</span>
+          </a>
         </li>
         <li class="header-nav-item">
-          <a href="./games"><span>Games</span></a>
+          <a href="./games">
+            <span>Games</span>
+          </a>
         </li>
         <li class="header-nav-item">
-          <a href="./tournaments"><span>Tournaments</span></a>
+          <a href="./tournaments">
+            <span>Tournaments</span>
+          </a>
         </li>
         <li class="header-nav-item">
-          <a href="./ELO"><span>ELO</span></a>
+          <a href="./ELO">
+            <span>ELO</span>
+          </a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <div id="content-main">
-    <div class="recent-tournaments-wrapper">
-      <ul class="recent-tournaments">
-        <li class="recent-tournament-1">recent tournament</li>
-        <li class="recent-tournament-2"></li>
-        <li class="recent-tournament-3"></li>
-        <li class="recent-tournament-4"></li>
-        <li class="recent-tournament-5"></li>
-      </ul>
-    </div>
-    <div class="recent-games">
-      <ul class="recent-games-list">
-        <li class="recent-games-1">
-          <ul class="recent-games-team-list">
-            <li class="recent-games-team1">recent game</li>
-            <li class="recent-games-team2"></li>
+  <div class="container">
+    <div class="row">
+      <section id="content-main" class="col-md-8">
+        <Header>Recent Tournaments</Header>
+
+        <div class="recent-tournaments-wrapper">
+          <ul id="recent-tournaments">
+            <div class="row layer1">
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+              <li class="recent-tournament col-md-2 layer2"><img src="./images/sample_tournament.png" alt="sample"></li>
+            </div>
+          </div>
+        </ul>
+        <header>Recent Games</header>
+        <div class="row recent-games layer1">
+          <ul class="recent-games-list">
+            <li id="recent-games-1" class="layer2 col-md-12">
+              <ul class="recent-games-team-list">
+                <li class="recent-games-team1"></li>
+                <li class="recent-games-team2"></li>
+              </ul>
+              <ul class="recent-games-player-list">
+                <li class="recent-games-top">
+                  <ul class="recent-games-top-player-list">
+                    <li class="recent-games-top1"></li>
+                    <li class="recent-games-top2"></li>
+                  </ul>
+                </li>
+                <li class="recent-games-jungle">
+                  <ul class="recent-games-jungle-player-list">
+                    <li class="recent-games-jungle1"></li>
+                    <li class="recent-games-jungle2"></li>
+                  </ul>
+                </li>
+                <li class="recent-games-mid">
+                  <ul class="recent-games-mid-player-list">
+                    <li class="recent-games-mid1"></li>
+                    <li class="recent-games-mid2"></li>
+                  </ul>
+                </li>
+                <li class="recent-games-adc">
+                  <ul class="recent-games-adc-player-list">
+                    <li class="recent-games-adc1"></li>
+                    <li class="recent-games-adc2"></li>
+                  </ul>
+                </li>
+                <li class="recent-games-support">
+                  <ul class="recent-games-support-player-list">
+                    <li class="recent-games-support1"></li>
+                    <li class="recent-games-support2"></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </li>
+            <li class="recent-games-2 layer2  col-md-12">
+
+              <ul class="recent-games-team-list">
+                <li class="recent-games-team1"></li>
+                <li class="recent-games-team2"></li>
+              </ul>
+            </li>
+
+            <li class="recent-games-3 layer2  col-md-12">
+
+              <ul class="recent-games-team-list">
+                <li class="recent-games-team1"></li>
+                <li class="recent-games-team2"></li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <section id="content-side" class="col-md-4">
+      <header>Top Teams <small>by ELO</small></header>
+        <div class="top-teams layer1">
+          <ul class="top-team-list">
+            <li class="top-team layer2"><img src="./images/sample_team.png" alt="sample"></li>
+            <li class="top-team layer2"></li>
+            <li class="top-team layer2"></li>
+            <li class="top-team layer2"></li>
+            <li class="top-team layer2"></li>
           </ul>
-          <ul class="recent-games-player-list">
-            <li class="recent-games-top">
-              <ul class="recent-games-top-player-list">
-                <li class="recent-games-top1"></li>
-                <li class="recent-games-top2"></li>
-              </ul>
-            </li>
-            <li class="recent-games-jungle">
-              <ul class="recent-games-jungle-player-list">
-                <li class="recent-games-jungle1"></li>
-                <li class="recent-games-jungle2"></li>
-              </ul>
-            </li>
-            <li class="recent-games-mid">
-              <ul class="recent-games-mid-player-list">
-                <li class="recent-games-mid1"></li>
-                <li class="recent-games-mid2"></li>
-              </ul>
-            </li>
-            <li class="recent-games-adc">
-              <ul class="recent-games-adc-player-list">
-                <li class="recent-games-adc1"></li>
-                <li class="recent-games-adc2"></li>
-              </ul>
-            </li>
-            <li class="recent-games-support">
-              <ul class="recent-games-support-player-list">
-                <li class="recent-games-support1"></li>
-                <li class="recent-games-support2"></li>
-              </ul>
-            </li>
+        </div>
+        <header>Top Players <small>by ELO</small></header>
+        <div class="top-players layer1">
+          <ul class="top-player-list">
+            <li class="top-player layer2"><img src="./images/sample.png" alt="sample"></li></li>
+            <li class="top-player layer2"></li>
+            <li class="top-player layer2"></li>
+            <li class="top-player layer2"></li>
+            <li class="top-player layer2"></li>
           </ul>
-
-        </li>
-        <li class="recent-games-2">
-
-          <ul class="recent-games-team-list">
-            <li class="recent-games-team1"></li>
-            <li class="recent-games-team2"></li>
-          </ul>
-        </li>
-
-        <li class="recent-games-3">
-
-          <ul class="recent-games-team-list">
-            <li class="recent-games-team1"></li>
-            <li class="recent-games-team2"></li>
-          </ul>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-  <div id="content-side">
-    <div class="top-teams">
-      side
-      <ul class="top-team-list">
-        <li class="top-team"></li>
-        <li class="top-team"></li>
-        <li class="top-team"></li>
-        <li class="top-team"></li>
-        <li class="top-team"></li>
-      </ul>
-    </div>
-    <div class="top-players">
-      <ul class="top-player-list">
-        <li class="top-player"></li>
-        <li class="top-player"></li>
-        <li class="top-player"></li>
-        <li class="top-player"></li>
-        <li class="top-player"></li>
-      </ul>
+        </div>
+      </section>
     </div>
   </div>
 
   <footer>
     <nav id="footer-nav">
       <ul id="footer-nav-item-list">
-<!--         <li class="footer-social-link">
-          <a href="http://twitter.com"> <i class="fa fa-twitter-square fa-2x"></i>
-          </a>
-        </li>
-        <li class="footer-social-link">
-          <a href="http://www.facebook.com"> <i class="fa fa-facebook-square fa-2x"></i>
-          </a>
-        </li> -->
-        <li class="footer-nav-item">
-          <a href="./contactus">Contact Us</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="./faq">FAQ</a>
-        </li>
-        <li class="footer-nav-item">
-          <a href="./aboutus">About Us</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="copyright">
-      LoL Numbers isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
-    </div>
-  </footer>
+        <!--         <li class="footer-social-link">
+        <a href="http://twitter.com"> <i class="fa fa-twitter-square fa-2x"></i>
+        </a>
+      </li>
+      <li class="footer-social-link">
+        <a href="http://www.facebook.com"> <i class="fa fa-facebook-square fa-2x"></i>
+        </a>
+      </li>
+      -->
+      <li class="footer-nav-item">
+        <a href="./contactus">Contact Us</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="./faq">FAQ</a>
+      </li>
+      <li class="footer-nav-item">
+        <a href="./aboutus">About Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="copyright">
+    LoL Numbers isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+  </div>
+</footer>
 </body>
 </html>

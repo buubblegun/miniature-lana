@@ -1,9 +1,17 @@
+@import custom
+
 $base-color: #262f3e
 $dark-1: #1a1a1a
 $dark-2: #000000
 $light-1: #3a485f
 $light-2: #4c5f80
 $light-3: #6d84ab
+$white-0: #f8f9fa
+$white-1: #f2f2f2
+$white-2: #ECF0F1
+$white-3: #EFF1F1
+$white-4: #FFFFFF
+$border: #cfd9db
 $base-text: #7f8c8d
 
 html
@@ -11,120 +19,12 @@ html
 
 body
   margin: 0
-  font-size: 12px
+  font-size: 14px
   color: $base-text
+  background: $white-1
   font-family:  "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary
-  display: block
-
-[hidden], template
-  display: none
-
-a
-  color: $base-text
-  background: transparent
-  &:active, &:hover
-    outline: 0
-
-b, strong
-  font-weight: bold
-
-h1
-  font-size: 2em
-  margin: 0.67em 0
-
-sub
-  font-size: 75%
-  line-height: 0
-  position: relative
-  vertical-align: baseline
-  bottom: -0.25em
-
-sup
-  font-size: 75%
-  line-height: 0
-  position: relative
-  vertical-align: baseline
-  top: -0.5em
-
-img
-  border: 0
-
-figure
-  margin: 1em 40px
-
-button, input, optgroup, select, textarea
-  font: inherit
-  margin: 0
-  color: inherit
-
-button
-  overflow: visible
-  text-transform: none
-
-select
-  text-transform: none
-
-button, html input[type="button"]
-  cursor: pointer
-  -webkit-appearance: button
-
-input
-  &[type="reset"], &[type="submit"]
-    cursor: pointer
-    -webkit-appearance: button
-
-button[disabled], html input[disabled]
-  cursor: default
-
-button::-moz-focus-inner
-  border: 0
-  padding: 0
-
-input
-  &::-moz-focus-inner
-    border: 0
-    padding: 0
-  line-height: normal
-  &[type="checkbox"], &[type="radio"]
-    padding: 0
-    box-sizing: border-box
-  &[type="number"]
-    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
-      height: auto
-  &[type="search"]
-    -moz-box-sizing: content-box
-    box-sizing: content-box
-    -webkit-appearance: textfield
-    -webkit-box-sizing: content-box
-    &::-webkit-search-cancel-button, &::-webkit-search-decoration
-      -webkit-appearance: none
-
-fieldset
-  border: 1px solid #c0c0c0
-  margin: 0 2px
-  padding: 0.35em 0.625em 0.75em
-
-legend
-  padding: 0
-  border: 0
-
-textarea
-  overflow: auto
-
-optgroup
-  font-weight: bold
-
-table
-  border-collapse: collapse
-  border-spacing: 0
-
-td, th
-  padding: 0
-
 li
-  display: list-item
   list-style-type: none
 
 ul, menu, dir 
@@ -134,7 +34,24 @@ ul, menu, dir
   -webkit-margin-after: 1em
   -webkit-margin-start: 0px
   -webkit-margin-end: 0px
-  -webkit-padding-start: 40px
+  -webkit-padding-start: 0px
+
+a
+  display: block
+  color: $light-3
+  float: right
+  padding: 0 15px 
+  text-decoration: none
+  &:hover
+    color: $dark-1
+    text-decoration: none
+
+header
+  color: $light-1
+  font-size: 1.25em
+  display: block
+  line-height: 1px
+  text-transform: uppercase
 
 #header-nav
   min-height: 100%
@@ -144,12 +61,13 @@ ul, menu, dir
   background: $base-color
   overflow: hidden
   position: fixed
+  line-height: normal
   float: left
   display: block
   a
-    color: #ffffff
+    color: $white-4
     display: block
-    padding: 10px
+    padding: 10px 10px 10px 50px
     text-decoration: none
     width: 160px
     cursor: pointer
@@ -165,7 +83,7 @@ ul, menu, dir
       background: $dark-2
   &:hover
     width: 160px
-  .logo
+  #logo
     width: 78px
     margin-left: 6.5px
     margin-bottom: 3px
@@ -175,27 +93,31 @@ footer
   position: relative
   border-top: 1px solid #cfd9db
   line-height: 12px
+  font-size: .75em
   z-index: 5
 
-  nav
+  #footer-nav
     display: block
     height: 30px
     padding-right: 30px
-    a
-      display: block
-      float: right
-      padding: 0 15px  
-      text-decoration: none
-      &:hover
-        color: $dark-1
-        font-weight: bold
 
-  .copyright
+  #copyright
     display: block
     padding: 0
     margin: 0 auto 0 auto
     text-align: center
-    font-size: 10px
     font-family: Arial
     color: #c0cdd1
+
+.layer1
+  display: block
+  padding: 2px
+  background-color: $white-0
+  border: 1px solid $border
+  margin: 14px 0px
+
+.layer2
+  display: block
+  padding: 1px
+  border: 1px solid $white-1
 
