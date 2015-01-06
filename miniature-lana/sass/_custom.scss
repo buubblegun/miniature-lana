@@ -1,0 +1,179 @@
+$base-color: #262f3e;
+$dark-1: #1a1a1a;
+$dark-2: black;
+$light-1: #3a485f;
+$light-2: #4c5f80;
+$light-3: #6d84ab;
+$white-0: #f8f9fa;
+$white-1: #f2f2f2;
+$white-2: #ecf0f1;
+$white-3: #eff1f1;
+$white-4: white;
+$border: #cfd9db;
+$base-text: #7f8c8d;
+
+body {
+    margin: 0;
+    font-size: 14px;
+    color: $base-text;
+    background: $white-1;
+    font-family: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul, menu {
+    display: block;
+    list-style-type: none;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+a {
+    display: block;
+    color: $light-3;
+    float: right;
+    padding: 0 15px;
+    text-decoration: none;
+
+    &:hover {
+        color: $dark-1;
+        text-decoration: none;
+    }
+}
+
+header {
+    color: $light-1;
+    font-size: 1.25em;
+    display: block;
+    line-height: 1px;
+    text-transform: uppercase;
+}
+
+#header-nav {
+    min-height: 100%;
+    width: 50px;
+    z-index: 9999;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: $base-color;
+    overflow: hidden;
+    position: fixed;
+    line-height: normal;
+    float: left;
+    display: block;
+
+    a {
+        color: $white-4;
+        display: block;
+        padding: 10px 10px 10px 50px;
+        text-decoration: none;
+        width: 160px;
+        cursor: pointer;
+        position: relative;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 14px;
+        float: left;
+        -moz-transition-duration: 0.15s;
+        -o-transition-duration: 0.15s;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -moz-transition-property: all;
+        -o-transition-property: all;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -moz-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+        transition-timing-function: ease;
+
+        &:hover {
+            color: $light-3;
+            background: $dark-2;
+        }
+    }
+
+    &:hover {
+        width: 160px;
+    }
+
+    #logo {
+        width: 78px;
+        margin-left: 6.5px;
+        margin-bottom: 3px;
+    }
+}
+
+footer {
+    min-width: 100%;
+    position: relative;
+    border-top: 1px solid #cfd9db;
+    line-height: 12px;
+    font-size: 0.75em;
+    z-index: 5;
+
+    #footer-nav {
+        display: block;
+        height: 30px;
+        padding-right: 30px;
+    }
+
+    #copyright {
+        display: block;
+        padding: 0;
+        margin: 0 auto 0 auto;
+        text-align: center;
+        font-family: Arial;
+        color: #c0cdd1;
+    }
+}
+
+.layer1 {
+    display: block;
+    padding: 2px;
+    background-color: $white-0;
+    border: 1px solid $border;
+    margin: 14px 0;
+}
+
+.layer2 {
+    display: block;
+    padding: 1px;
+    border: 1px solid $white-1;
+}
+
+// index
+#content-main {
+  #recent-tournaments {
+    .recent-tournament {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.top-teams {
+  .top-team {
+    img {
+      max-width: 50px;
+    }
+  }
+}
+
+.top-players {
+  .top-player {
+    img {
+      max-width: 50px;
+    }
+  }
+}

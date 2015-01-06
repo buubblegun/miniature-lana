@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - LoL Numbers - #1 source of pro League of Legends Stats</title>
+    <meta name="description" content="LoL Numbers">
+    <meta name="kewords" content="lol, league of legends, statistics, lol stats, stats">
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/sass/default.css" rel="stylesheet" type="text/css" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container" id="header-nav">
+            <ul id="header-nav-item-list">
+                <li id="header-nav-item">
+                    <a href="./players">
+                        <span>Players</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./teams">
+                        <span>Teams</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./games">
+                        <span>Games</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./tournaments">
+                        <span>Tournaments</span>
+                    </a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./ELO">
+                        <span>ELO</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <nav id="footer-nav">
+                <ul id="footer-nav-item-list">
+                    <!--         <li class="footer-social-link">
+                  <a href="http://twitter.com"> <i class="fa fa-twitter-square fa-2x"></i>
+                  </a>
+                </li>
+                <li class="footer-social-link">
+                  <a href="http://www.facebook.com"> <i class="fa fa-facebook-square fa-2x"></i>
+                  </a>
+                </li>
+                -->
+                    <li class="footer-nav-item">
+                        <a href="./contactus">Contact Us</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="./faq">FAQ</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="./aboutus">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="copyright">
+                LoL Numbers isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
