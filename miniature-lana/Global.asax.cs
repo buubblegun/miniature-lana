@@ -11,6 +11,7 @@ namespace miniature_lana
     {
         protected void Application_Start()
         {
+            //miles was here
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
