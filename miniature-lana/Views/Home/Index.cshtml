@@ -1,23 +1,50 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<nav class="navbar navbar-default">
+    <div class="container-fluid" id="nav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">LoL Numbers</a>
+        </div>
+    <!--why isnt this working...-->
+        <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+                <li class="dropdown" id="menuLogin">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                    <div class="dropdown-menu">
+                        <form class="form" id="formLogin">
+                            <!--placeholder for testing userlogin (optional)-->
+                            <input name="username" id="username" type="text" placeholder="Username">
+                            <input name="password" id="password" type="password" placeholder="Password"><br>
+                            <button type="button" id="btnLogin" class="btn">Login</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+     </div><!-- /.container-fluid -->
+</nav>
 
 <div class="row">
     <section id="content-main" class="col-md-8">
         <header>Recent Tournaments</header>
-
         <div class="recent-tournaments-wrapper">
             <ul id="recent-tournaments">
-                <div class="row layer1">
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                    <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
-                </div>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+                <li class="recent-tournament col-md-2 layer2"><img src="./Content/images/sample_tournament.png" alt="sample"></li>
+            </ul>
         </div>
-        </ul>
         <header>Recent Games</header>
         <div class="row recent-games layer1">
             <ul class="recent-games-list">
@@ -58,25 +85,21 @@
                             </ul>
                         </li>
                     </ul>
-
                 </li>
                 <li class="recent-games-2 layer2  col-md-12">
-
                     <ul class="recent-games-team-list">
                         <li class="recent-games-team1"></li>
                         <li class="recent-games-team2"></li>
                     </ul>
                 </li>
-
                 <li class="recent-games-3 layer2  col-md-12">
-
                     <ul class="recent-games-team-list">
                         <li class="recent-games-team1"></li>
                         <li class="recent-games-team2"></li>
                     </ul>
                 </li>
+            </ul>
         </div>
-        </ul>
     </section>
     <section id="content-side" class="col-md-4">
         <header>Top Teams <small>by ELO</small></header>
@@ -101,4 +124,3 @@
         </div>
     </section>
 </div>
-    </div>
